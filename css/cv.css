@@ -1,0 +1,149 @@
+/* Reset chung */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #121212; /* nền tối phong cách pentest */
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(90deg, #ff9900, #ff6600); /* cam nổi bật */
+  color: #ffffff;
+  text-align: center;
+  padding: 25px;
+  border-bottom: 3px solid #ff9900;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+.banner h1 {
+  font-size: 40px;
+  margin-bottom: 5px;
+  color: #ffcc00; /* chữ nổi bật vàng */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.banner p {
+  font-size: 18px;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Container bố cục 2 cột */
+.container {
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+}
+
+/* Sidebar bên trái */
+.sidebar {
+  width: 22%;
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255,153,0,0.3);
+  border: 1px solid #ff9900;
+}
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ff9900;
+  padding-bottom: 5px;
+  padding-left: 85px;
+  color: #ffcc00; /* chữ vàng */
+}
+.sidebar ul {
+  list-style: none;
+}
+.sidebar ul li {
+  margin: 10px 0;
+}
+.sidebar ul li a {
+  text-decoration: none;
+  color: #ff9900;
+  font-weight: bold;
+}
+.sidebar ul li a:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+/* Nội dung bên phải */
+.content {
+  width: 75%;
+  margin-left: 20px;
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255,153,0,0.3);
+}
+.content h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #ffcc00; /* tên cá nhân vàng */
+}
+.content section {
+  margin-bottom: 25px;
+}
+.content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ff9900; /* màu cam */
+  border-bottom: 2px solid #ff9900;
+  padding-bottom: 5px;
+}
+
+/* Profile box (ảnh + giới thiệu) */
+.profile-box {
+  display: flex;
+  align-items: center;
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border: 1px solid #ff9900;
+}
+.profile-left img {
+  border-radius: 8px;
+  border: 3px solid #ff9900;
+  margin-right: 20px;
+}
+.profile-right h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #ffcc00; /* tên cá nhân vàng */
+}
+.profile-right h4 {
+  margin: 5px 0 15px;
+  font-weight: normal;
+  color: #ffffff;
+}
+.profile-right p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #dddddd;
+}
+
+/* Danh sách */
+ul {
+  padding-left: 20px;
+}
+ul li {
+  margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  background: #ff9900;
+  color: #000000;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}

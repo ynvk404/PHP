@@ -2,170 +2,236 @@
 <html lang="vi">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bảng điểm học tập</title>
-  <link rel="stylesheet" href="css/score.css" />
+  <link rel="stylesheet" href="css/score.css">
 </head>
 
 <body>
   <div class="container">
 
-    <!-- Phần đầu -->
-    <header class="top">
-      <div class="left">
-        <p>BỘ GIÁO DỤC & ĐÀO TẠO</p>
-        <p class="logo underline1">
-          <img src="images/Logo-Hoc-Vien-Ky-Thuat-Mat-Ma-ACTVN-1.png" alt="Logo HVKTMM" class="logo-img" />
-          HỌC VIỆN KỸ THUẬT MẬT MÃ
-        </p>
+    <!-- Banner -->
+    <div class="banner">
+      <div class="banner-text">
       </div>
-      <div class="right">
-        <p>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</p>
-        <p class="underline2">Độc lập - Tự do - Hạnh phúc</p>
-      </div>
-    </header>
+    </div>
 
-    <!-- Phần thông tin sinh viên -->
-    <main class="middle">
-      <div class="title">
-        <p>BẢNG ĐIỂM HỌC TẬP</p>
-      </div>
-      <div class="description">
-        <p>(Theo QĐ công nhận TN số 12345QĐ-HVKTMM ngày 2/9/2025)</p>
-      </div>
-      <div class="content">
-        <div class="left">
-          <p>Họ và tên: <strong class="strong1">NGUYỄN VĂN KHẢI</strong></p>
-          <p>Ngày sinh: <strong class="strong2">18/02/2004</strong></p>
-          <p>Lớp: <strong class="strong3">AT19A</strong></p>
-          <p>Mã sinh viên: <strong class="strong4">AT190128</strong></p>
-          <p>Ngành học: <strong class="strong4">An toàn thông tin</strong></p>
-        </div>
-        <div class="right">
-          <p>Nơi sinh: <strong>Hà Nội</strong></p>
-          <p>Hệ đào tạo: <strong>Dân sự</strong></p>
-          <p>Khóa học: <strong>2022-2026</strong></p>
-        </div>
-      </div>
-    </main>
+    <!-- Bố cục 2 cột -->
+    <div class="main-layout">
+      <!-- Cột trái - Menu Website -->
+      <aside class="menu-website">
+        <h3>Menu Website</h3>
+        <ul>
+          <li><a href="example.html">1.1. Ví dụ mẫu</a></li>
+          <li><a href="information.html">1.2. Giới thiệu bản thân</a></li>
+          <li><a href="score.html" class="active">1.3. Bảng điểm</a></li>
+          <li><a href="curriculum_vitae.html">1.4. Lý lịch</a></li>
+        </ul>
+      </aside>
 
-    <!-- Phần bảng điểm -->
-    <section class="bottom">
-      <div class="title">
-        <strong>KẾT QUẢ HỌC TẬP</strong>
-      </div>
+      <!-- Cột phải - Thông tin và Bảng điểm -->
+      <section class="content-area">
+        <!-- Phần đầu -->
+        <header class="top">
+          <div class="left">
+            <p class="center-text">BỘ GIÁO DỤC & ĐÀO TẠO</p>
+            <div class="logo-line">
+              <img src="images/Logo-Hoc-Vien-Ky-Thuat-Mat-Ma-ACTVN-1.png" height="50" width="50" alt="Logo HVKTMM"
+                class="logo-img">
+              <span class="logo-text">HỌC VIỆN KỸ THUẬT MẬT MÃ</span>
+            </div>
+          </div>
+          <div class="right">
+            <p class="center-text">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</p>
+            <p class="center-text underline2">Độc lập - Tự do - Hạnh phúc</p>
+          </div>
+        </header>
 
-      <table class="grades" style="width: 100%;">
-        <caption>Năm học 2025 - 2026</caption>
-        <thead>
-          <tr>
-            <th>STT</th>
-            <th>Tên học phần</th>
-            <th>Học kỳ</th>
-            <th>ĐCC</th>
-            <th>ĐT</th>
-            <th>Tổng</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Lập trình hướng đối tượng</td>
-            <td>1</td>
-            <td>9</td>
-            <td>8</td>
-            <td>8.5</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Cấu trúc dữ liệu và giải thuật</td>
-            <td>1</td>
-            <td>8</td>
-            <td>9</td>
-            <td>8.5</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Hệ quản trị cơ sở dữ liệu</td>
-            <td>1</td>
-            <td>10</td>
-            <td>9</td>
-            <td>9.5</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Linux và phần mềm nguồn mở</td>
-            <td>1</td>
-            <td>8</td>
-            <td>8</td>
-            <td>8</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>Nguyên lý hệ điều hành</td>
-            <td>1</td>
-            <td>9</td>
-            <td>9</td>
-            <td>9</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>Tiếng Anh 3</td>
-            <td>2</td>
-            <td>7</td>
-            <td>8</td>
-            <td>7.5</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>Kỹ thuật truyền số liệu</td>
-            <td>2</td>
-            <td>8</td>
-            <td>8</td>
-            <td>8</td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>Thuật toán trong an toàn thông tin</td>
-            <td>2</td>
-            <td>9</td>
-            <td>9</td>
-            <td>9</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>Kỹ thuật lập trình</td>
-            <td>2</td>
-            <td>8</td>
-            <td>9</td>
-            <td>8.5</td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td>Giao thức an toàn mạng</td>
-            <td>2</td>
-            <td>9</td>
-            <td>9</td>
-            <td>9</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="5">Điểm trung bình cả năm</td>
-            <td>8.8</td>
-          </tr>
-        </tfoot>
+        <!-- Thông tin sinh viên -->
+        <main class="middle">
+          <div class="title">
+            <p>BẢNG ĐIỂM HỌC TẬP</p>
+          </div>
+          <div class="description">
+            <p>(Theo QĐ công nhận TN số 1974QĐ-HVKTMM ngày 12/10/2025)</p>
+          </div>
+          <div class="student-info">
+            <div class="left">
+              <p>Họ và tên: <strong>Nguyễn Văn Khải</strong></p>
+              <p>Ngày sinh: <strong>18/02/2004</strong></p>
+              <p>Lớp: <strong>AT19A</strong></p>
+              <p>Mã sinh viên: <strong>AT190456</strong></p>
+              <p>Ngành học: <strong>An toàn thông tin</strong></p>
+            </div>
+            <div class="right">
+              <p>Quê quán: <strong>Hà Nội</strong></p>
+              <p>Hệ đào tạo: <strong>Dân sự</strong></p>
+              <p>Khóa học: <strong>2022-2027</strong></p>
+            </div>
+          </div>
+        </main>
 
-        <tfoot>
-          <tr>
-            <td colspan="5">Điểm trung bình cả năm</td>
-            <td>10</td>
-          </tr>
-        </tfoot>
-      </table>
+        <!-- Bảng điểm -->
+        <section class="bottom">
+          <div class="title">
+            <strong>KẾT QUẢ HỌC TẬP</strong>
+          </div>
 
-    </section>
+          <table class="grades">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Năm học</th>
+                <th>Học kỳ</th>
+                <th>Môn thi</th>
+                <th>Lần</th>
+                <th>TP1</th>
+                <th>TP2</th>
+                <th>ĐQT</th>
+                <th>Điểm thi</th>
+                <th>Điểm HP</th>
+                <th>Điểm chữ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>2024-2025</td>
+                <td>1</td>
+                <td>An toàn cơ sở dữ liệu</td>
+                <td>1</td>
+                <td>9.5</td>
+                <td>10</td>
+                <td>9.7</td>
+                <td>8</td>
+                <td>8.5</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>2024-2025</td>
+                <td>2</td>
+                <td>An toàn mạng máy tính</td>
+                <td>1</td>
+                <td>9</td>
+                <td>9</td>
+                <td>9</td>
+                <td>7.5</td>
+                <td>8</td>
+                <td>B+</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>2024-2025</td>
+                <td>1</td>
+                <td>Cấu trúc dữ liệu và giải thuật</td>
+                <td>1</td>
+                <td>7</td>
+                <td>9</td>
+                <td>7.6</td>
+                <td>8.3</td>
+                <td>8.1</td>
+                <td>B+</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>2024-2025</td>
+                <td>2</td>
+                <td>Chuyên đề cơ sở</td>
+                <td>1</td>
+                <td>9</td>
+                <td>10</td>
+                <td>9.3</td>
+                <td>8</td>
+                <td>8.4</td>
+                <td>B+</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>2024-2025</td>
+                <td>2</td>
+                <td>Cơ sở an toàn thông tin</td>
+                <td>1</td>
+                <td>9</td>
+                <td>10</td>
+                <td>9.3</td>
+                <td>8</td>
+                <td>8.4</td>
+                <td>B+</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>2024-2025</td>
+                <td>2</td>
+                <td>Giao thức an toàn mạng</td>
+                <td>1</td>
+                <td>8.5</td>
+                <td>10</td>
+                <td>9</td>
+                <td>7.6</td>
+                <td>8</td>
+                <td>B+</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>2024-2025</td>
+                <td>1</td>
+                <td>Hệ quản trị cơ sở dữ liệu</td>
+                <td>1</td>
+                <td>7.2</td>
+                <td>8</td>
+                <td>7.44</td>
+                <td>8.2</td>
+                <td>8</td>
+                <td>B+</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>2024-2025</td>
+                <td>2</td>
+                <td>Kiến trúc máy tính và hợp ngữ</td>
+                <td>1</td>
+                <td>8</td>
+                <td>8.5</td>
+                <td>8.2</td>
+                <td>7.5</td>
+                <td>7.7</td>
+                <td>B</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>2024-2025</td>
+                <td>2</td>
+                <td>Kỹ thuật lập trình</td>
+                <td>1</td>
+                <td>7.5</td>
+                <td>8</td>
+                <td>7.7</td>
+                <td>8</td>
+                <td>7.9</td>
+                <td>B+</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>2024-2025</td>
+                <td>1</td>
+                <td>Kỹ thuật truyền số liệu</td>
+                <td>1</td>
+                <td>9.4</td>
+                <td>9</td>
+                <td>9.28</td>
+                <td>6.3</td>
+                <td>7.2</td>
+                <td>B</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+    </div>
+
+    <!-- Footer -->
     <footer>
       &copy; 2025 Nguyễn Văn Khải. Bản quyền thuộc về youngnvk.
     </footer>

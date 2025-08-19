@@ -1,141 +1,226 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+/* --- Reset & cơ bản --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
-/* Body chính */
 body {
-    width: 80%;
-    margin: 20px auto;
-    border: 2px solid #ccc;
-    padding: 0;
-    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
 }
 
-/* Banner */
+/* --- Banner --- */
 .banner {
+    position: relative;
     width: 100%;
     height: 180px;
-    background-image: url('../images/screenshot_1755158710-removebg-preview.png');
+    background: url("../images/d49e0de1-e38a-46d9-8db6-2f8aed077221-removebg-preview (1).png") no-repeat center center;
     background-size: cover;
-    background-position: center;
-    border-bottom: 3px solid #0077b6;
-    margin-bottom: 20px;
+    border-bottom: 3px solid #ff9900;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
 }
 
-/* Header */
+.banner-text h1 {
+    font-size: 28px;
+    color: #ffffff;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    text-align: center;
+    line-height: 180px;
+}
+
+/* --- Header --- */
 .head {
     display: flex;
     justify-content: space-between;
-    padding: 20px 30px;
-    background-color: #e0f7fa;
     align-items: center;
+    background-color: #000000;
+    padding: 15px 20px;
 }
 
-.head .fullname h1 {
-    color: #0077b6;
-    font-size: 28px;
+.fullname h1 {
+    color: #ff9900;
+    font-size: 24px;
+    margin-bottom: 5px;
 }
 
-.head .fullname h2 {
-    color: gray;
+.fullname h2 {
+    color: #ffffff;
     font-size: 16px;
+    font-weight: normal;
 }
 
-.head .navbar a {
+.navbar a {
+    color: #ffffff;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-    color: gray;
     margin-left: 15px;
-    transition: color 0.3s;
-}
-
-.head .navbar a:first-child {
-    color: black;
-}
-
-.head .navbar a:hover {
-    color: #0077b6;
-}
-
-/* Body nội dung */
-.body {
-    display: flex;
-    padding: 30px;
-    gap: 50px;
-}
-
-/* Cột trái */
-.left h2 {
-    margin-bottom: 15px;
-    color: #0077b6;
-}
-
-.left ul {
-    padding-left: 18px;
-    margin-bottom: 20px;
-}
-
-.left li {
-    padding: 3px 0;
-}
-
-.left button {
-    padding: 10px 20px;
-    background-color: #00b4d8;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 4px;
     transition: background 0.3s;
 }
 
-.left button:hover {
-    background-color: #0077b6;
+.navbar a:hover {
+    background-color: #ff6600;
 }
 
-/* Cột phải */
-.right .header h2 {
-    margin-bottom: 15px;
-    color: #0077b6;
-}
-
-.right .container {
+/* --- Body chính --- */
+.body {
     display: flex;
-    align-items: center;
     gap: 20px;
-    margin-bottom: 20px;
-}
-
-.right .container img {
-    width: 120px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-.right .container ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-/* Bonus */
-.bonus ul {
-    list-style-type: circle;
-    padding-left: 20px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
     padding: 20px;
-    background-color: #e0f7fa;
+}
+
+/* --- Sidebar / Menu --- */
+.menu, .sidebar {
+    width: 220px;
+    background-color: #1c1c1c;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ff9900;
+    box-shadow: 0 0 15px rgba(255,153,0,0.4);
+}
+
+.menu h2, .sidebar h2 {
+    color: #ff9900;
+    font-size: 18px;
+    border-bottom: 2px solid #ff9900;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.menu ul, .sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li, .sidebar ul li {
+    margin: 8px 0;
+}
+
+.menu ul li a, .sidebar ul li a {
+    color: #ff9900;
+    text-decoration: none;
+    display: block;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: normal;
+    transition: all 0.3s;
+}
+
+/* Hover (chỉ khi di chuột) */
+.menu ul li a:hover, 
+.sidebar ul li a:hover {
+    background-color: #ff6600;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Active (luôn giữ trạng thái) */
+.menu ul li a.active, 
+.sidebar ul li a.active {
+    background-color: #ff6600;
+    color: #000000;
+    font-weight: bold;
+    padding-left: 16px; /* lùi sang phải 1 đoạn */
+}
+
+/* --- Skills (cột giữa) --- */
+.skills {
+    width: 250px;
+    background-color: #1c1c1c;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255,153,0,0.3);
+}
+
+.skills h2 {
+    color: #ff9900;
+    font-size: 18px;
+    border-bottom: 2px solid #ff9900;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.skills ul li {
+    padding: 5px 0;
+}
+
+.skills button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff9900;
+    color: #000000;
+    cursor: pointer;
+}
+
+.skills button:hover {
+    background-color: #ff6600;
+}
+
+/* --- Info (cột phải) --- */
+.info {
+    flex: 1;
+    background-color: #1c1c1c;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255,153,0,0.3);
+}
+
+.info .header h2 {
+    color: #ff9900;
+    margin-bottom: 10px;
+}
+
+.info .header h3 {
+    color: #ffffff;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.container img {
+    width: 120px;
+    border-radius: 8px;
+    border: 2px solid #ff9900;
+}
+
+.container ul {
+    list-style: none;
+    color: #ffffff;
+}
+
+.container ul li {
+    padding-bottom: 8px;
+}
+
+/* --- Phần sở thích --- */
+.bonus {
     margin-top: 20px;
-    border-top: 1px solid #ccc;
+}
+
+.bonus ul li {
+    padding: 3px 0;
+    color: #ffffff;
+}
+
+/* --- Footer --- */
+footer {
+    margin-top: 30px;
+    background: #ff9900;
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: bold;
 }

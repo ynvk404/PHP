@@ -1,144 +1,208 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+/* --- Reset & cơ bản --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background-color: #121212; /* nền tối */
+    color: #ffffff;
 }
 
-/* Container khổ A4 */
+/* --- Container chính --- */
 .container {
-    width: 800px;
-    height: auto;
+    width: 95%;
     margin: 20px auto;
-    border: 1px solid black;
-    padding: 20px;
-    font-size: 18px;
 }
 
-/* Header (Top) */
+/* --- Banner --- */
+.banner {
+    width: 100%;
+    height: 180px;
+    background: url("../images/d49e0de1-e38a-46d9-8db6-2f8aed077221-removebg-preview\ \(1\).png") no-repeat center center; /* ảnh banner của bạn */
+    background-size: cover;
+    border-bottom: 3px solid #ff9900; /* cam nổi bật */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+
+/* --- Banner chữ (nếu có) --- */
+.banner-text h1 {
+    font-size: 28px;
+    color: #ffffff;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    text-align: center;
+    line-height: 150px; /* căn giữa theo chiều cao banner */
+}
+
+/* --- Bố cục chính --- */
+.main-layout {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* --- Menu Website --- */
+.menu-website {
+    width: 220px;
+    background-color: #1c1c1c;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ff9900;
+    box-shadow: 0 0 15px rgba(255,153,0,0.4);
+}
+.menu-website h3 {
+    color: #ff9900;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff9900;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.menu-website ul {
+    list-style: none;
+}
+.menu-website ul li {
+    padding: 5px 0;
+}
+.menu-website ul li a {
+    color: #ff9900;
+    text-decoration: none;
+    display: block;
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+.menu-website ul li a.active,
+.menu-website ul li a:hover {
+    background-color: #ff6600; /* cam nổi bật */
+    color: #000000;
+}
+
+/* --- Content bên phải --- */
+.content-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* --- Header top --- */
 .top {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 20px;
+    background-color: #1c1c1c;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255,153,0,0.3);
 }
-
 .top .left, .top .right {
-    text-align: center;
-}
-
-.top .left .logo {
     display: flex;
-    align-items: center; /* Căn logo và chữ cùng chiều dọc */
-    font-weight: bold;
-    border-bottom: 3px solid black;
-    padding-bottom: 2px;
-    gap: 10px; /* Khoảng cách giữa logo và chữ */
+    flex-direction: column;
+    justify-content: center;
 }
-.top .underline2 {
-    font-weight: bold;
-    display: inline-block;
-    border-bottom: 3px solid black;
-    padding-bottom: 2px;
-}
-
-/* Main (Thông tin sinh viên) */
-.middle .title {
+.center-text {
     text-align: center;
-    font-size: 25px;
     font-weight: bold;
-    margin-bottom: 10px;
+    color: #ff9900;
+    margin-bottom: 5px;
 }
-
-.middle .description {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.middle .content {
+.logo-line {
     display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-    margin-bottom: 30px;
+    align-items: center;
+    gap: 10px;
+}
+.logo-line img {
+    height: 25px;
+    width: 25px;
+}
+.logo-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff9900;
 }
 
-.middle .content p {
-    padding: 3px 0;
+/* --- Thông tin sinh viên --- */
+.middle {
+    background-color: #1c1c1c;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255,153,0,0.3);
+}
+.middle .title p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff9900;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.middle .description p {
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.student-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.student-info .left, .student-info .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.student-info .left p, .student-info .right p {
+    margin-bottom: 8px;
 }
 
-.middle .content .right {
-    margin-top: 28px;
+/* --- Bảng điểm --- */
+.bottom {
+    background-color: #1c1c1c;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255,153,0,0.3);
 }
-
-/* Bảng điểm (Bottom) */
 .bottom .title {
     text-align: center;
-    font-weight: bold;
     margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff9900;
 }
-
-/* Table */
-table.grades {
+.grades {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    color: #ffffff;
 }
-
-table.grades caption {
-    caption-side: top;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-table.grades th, table.grades td {
-    border: 1px solid black;
-    text-align: center;
-    padding: 5px;
-}
-
-table.grades td:first-child {
-    width: 5%;
-}
-
-table.grades td:nth-child(2) {
-    text-align: left;
-    padding-left: 10px;
-}
-
-table.grades tfoot td {
-    font-weight: bold;
-    border-top: 2px solid black;
+.grades th, .grades td {
+    border: 1px solid #333;
+    padding: 8px 10px;
     text-align: center;
 }
+.grades th {
+    background-color: #ff9900; /* header cam */
+    color: #000000;
+}
+.grades tr:nth-child(even) {
+    background-color: #2c2c2c;
+}
+.grades tr:hover {
+    background-color: #ff6600;
+    color: #000000;
+}
 
-/* Responsive cơ bản */
-@media (max-width: 900px) {
-    .container {
-        width: 95%;
-    }
-    .middle .content {
-        flex-direction: column;
-        gap: 15px;
-    }
-    table.grades td, table.grades th {
-        font-size: 16px;
-        padding: 4px;
-    }
-}
-.logo-img {
-    width: 20px; /* Điều chỉnh kích thước logo */
-    height: auto;
-}
+/* --- Footer --- */
 footer {
-    text-align: center;       /* Căn giữa nội dung */
-    padding: 15px 0;          /* Khoảng cách trên/dưới */
-    background-color: #fefefe;
-    border-top: 1px solid #ccc;
-    margin-top: 30px;
-    font-size: 16px;
-    color: #333;
+  margin-top: 30px;
+  background: #ff9900;
+  color: #000000;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: bold;
 }
-
-
+.logo-text {
+    color: #ff9900; /* màu vàng */
+    font-weight: bold;
+    font-size: 18px;
+}
