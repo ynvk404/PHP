@@ -1,0 +1,47 @@
+
+
+.tree {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.tree li {
+    position: relative;
+    padding: 10px;
+}
+
+.tree li::before {
+    content: "+";
+    position: absolute;
+    left: -15px;
+}
+
+.tree li.expanded::before {
+    content: "-";
+}
+
+.tree li ul {
+    list-style-type: none;
+    padding-left: 20px;
+    display: none;
+}
+.tree ul {
+    display: none;
+    margin-left: 20px; /* thụt vào cho đẹp */
+    list-style-type: none;
+}
+
+.tree li.expanded > ul {
+    display: block; /* hiện khi li có class expanded */
+    transition: all 0.3s;
+}
+.folder-icon {
+    display: inline-block;
+    width: 16px;      /* chiều rộng icon */
+    height: 16px;     /* chiều cao icon */
+    margin-right: 5px; /* khoảng cách với tên folder */
+    vertical-align: middle;
+    background-image: url('../images/OIP.webp'); /* đường dẫn tới icon của bạn */
+    background-size: contain;
+    background-repeat: no-repeat;
+}

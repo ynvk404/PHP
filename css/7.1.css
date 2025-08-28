@@ -1,0 +1,64 @@
+/* Tổng thể */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Khung chứa menu22 và hiển thị */
+#center {
+    display: flex;
+    gap: 20px;
+}
+
+/* menu22 bên trái */
+.menu2 {
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu2 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu2 li {
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    background-color: #eee;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover: sáng lên */
+.menu2 li:hover {
+    background-color: #d1f0d1; /* xanh lá nhạt khi hover */
+}
+
+/* Khi được chọn */
+.menu2 li.selected {
+    background-color: #4caf50; /* xanh đậm khi chọn */
+    color: white;
+    font-weight: bold;
+}
+
+/* Khu vực hiển thị bên phải */
+.display-area {
+    flex-grow: 1;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.display-area h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}

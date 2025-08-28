@@ -1,0 +1,76 @@
+.calculator {
+    width: 320px;
+    background-color: #e8f5e9; /* nền xanh lá nhạt */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.screen {
+    text-align: right;
+    font-size: 32px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #4caf50;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    background-color: #c8e6c9; /* xanh lá nhạt hơn */
+    overflow-x: auto;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.button {
+    font-size: 24px;
+    padding: 15px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #a5d6a7; /* xanh lá trung bình */
+    transition: all 0.2s ease;
+    box-shadow: 0 4px #81c784;
+    text-align: center;
+    user-select: none;
+    color: #1b5e20; /* chữ đậm xanh lá */
+}
+
+.button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px #66bb6a;
+}
+
+.button:hover {
+    background-color: #81c784; /* xanh lá sáng hơn khi hover */
+}
+
+.button.operator {
+    background-color: #4caf50;
+    color: white;
+}
+
+.button.operator:hover {
+    background-color: #388e3c;
+}
+
+.button.clear {
+    background-color: #e53935; /* giữ đỏ cho nút C */
+    color: white;
+}
+
+.button.clear:hover {
+    background-color: #c62828;
+}
+
+.button.equal {
+    background-color: #43a047;
+    color: white;
+}
+
+.button.equal:hover {
+    background-color: #2e7d32;
+}

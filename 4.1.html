@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu bản thân</title>
+    <link rel="stylesheet" href="css/information.css">
+</head>
+
+<body>
+
+    <!-- Header chia 2 bên -->
+    <div class="head">
+        <!-- Bên trái: thông tin + avatar -->
+        <div class="left-head">
+            <img src="images/797b978f-bce7-46eb-8f65-dd6b00c9c8d1-removebg-preview.png" alt="avatar_anime"
+                class="avatar" />
+            <h1>Nguyễn Văn Khải</h1>
+            <h2>MSV: AT190128</h2>
+        </div>
+
+        <!-- Bên phải: banner -->
+        <div class="right-head">
+            <div class="banner">
+                <img src="images/screenshot_1755706712-removebg-preview.png" alt="Banner Website" class="banner-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Body chính -->
+    <div class="body">
+        <!-- Cột trái -->
+        <div class="left">
+
+            <!-- Menu Website -->
+            <div class="menu">
+                <h2>Menu Website</h2>
+                <details>
+                    <summary>Phần 7.1</summary>
+                    <ul>
+                        <li><a href="1.1.html">Câu 1.1</a></li>
+                        <li><a href="1.2.html">Câu 1.2</a></li>
+                        <li><a href="1.3.html">Câu 1.3</a></li>
+                        <li><a href="1.4.html">Câu 1.4</a></li>
+                        <li><a href="1.5.html">Câu 1.5</a></li>
+                        <li><a href="1.6.html">Câu 1.6</a></li>
+                        <li><a href="1.7.html">Câu 1.7</a></li>
+                        <li><a href="1.8.html">Câu 1.8</a></li>
+                        <li><a href="1.9.html">Câu 1.9</a></li>
+                        <li><a href="1.10.html">Câu 1.10</a></li>
+                        <li><a href="1.11.html">Câu 1.11</a></li>
+                        <li><a href="1.12.html">Câu 1.12</a></li>
+                        <li><a href="1.13.html">Câu 1.13</a></li>
+                        <li><a href="1.14.html">Câu 1.14</a></li>
+                    </ul>
+                </details>
+                <!-- Mục 7.2 -->
+                <details>
+                    <summary>Phần 7.2</summary>
+                    <ul>
+                        <li><a href="2.1.html">Câu 2.1</a></li>
+                    </ul>
+                </details>
+            
+                <details>
+                    <summary>Phần 7.3</summary>
+                    <ul>
+                        <li><a href="3.1.html">Câu 3.1</a></li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Phần 7.4</summary>
+                    <ul>
+                        <li><a href="4.1.html">Câu 4.1</a></li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Phần 7.5</summary>
+                    <ul>
+                        <li><a href="5.1.html">Câu 5.1</a></li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Phần 7.6</summary>
+                    <ul>
+                        <li><a href="6.1.html">Câu 6.1</a></li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Phần 7.7</summary>
+                    <ul>
+                        <li><a href="7.1.html">Câu 7.1</a></li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Phần 7.8</summary>
+                    <ul>
+                        <li><a href="8.1.html">Câu 8.1</a></li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Phần 7.9</summary>
+                    <ul>
+                        <li><a href="9.1.html">Câu 9.1</a></li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Phần 7.10</summary>
+                    <ul>
+                        <li><a href="10.1.html">Câu 10.1</a></li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Phần 7.11</summary>
+                    <ul>
+                        <li><a href="11.1.html">Câu 11.1</a></li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Phần 7.12</summary>
+                    <ul>
+                        <li><a href="12.1.html">Câu 12.1</a></li>
+                    </ul>
+                </details>
+
+            </div>
+
+        </div>
+        <div id="content" style="margin-left: 30px;">
+            <h2>Nhập thông tin hồ sơ học sinh</h2><br>
+                <form id="hosoForm" onsubmit="return validateHoso()">
+                <label for="mahs">Mã học sinh (8 ký tự):</label><br>
+                <input type="text" id="mahs" name="mahs" maxlength="8" required><br><br>
+
+                <label for="hoten">Họ và tên (tối đa 50 ký tự):</label><br>
+                <input type="text" id="hoten" name="hoten" maxlength="50" required><br><br>
+
+                <label for="ngaysinh">Ngày sinh:</label><br>
+                <input type="date" id="ngaysinh" name="ngaysinh" required><br><br>
+
+                <label for="diachi">Địa chỉ (tối đa 150 ký tự):</label><br>
+                <input type="text" id="diachi" name="diachi" maxlength="150" required><br><br>
+
+                <label for="lop">Lớp (6 ký tự):</label><br>
+                <input type="text" id="lop" name="lop" maxlength="6" required><br><br>
+
+                <label for="diemtoan">Điểm Toán (0 - 10):</label><br>
+                <input type="text" id="diemtoan" name="diemtoan" required><br><br>
+
+                <label for="diemly">Điểm Lý (0 - 10):</label><br>
+                <input type="text" id="diemly" name="diemly" required><br><br>
+
+                <label for="diemhoa">Điểm Hóa (0 - 10):</label><br>
+                <input type="text" id="diemhoa" name="diemhoa" required><br><br>
+
+                <button type="submit">Lưu</button>
+            </form>
+
+            <script>
+                function validateHoso() {
+                    const mahs = document.getElementById("mahs").value.trim();
+                    const hoten = document.getElementById("hoten").value.trim();
+                    const ngaysinh = document.getElementById("ngaysinh").value;
+                    const diachi = document.getElementById("diachi").value.trim();
+                    const lop = document.getElementById("lop").value.trim();
+                    const diemtoan = parseFloat(document.getElementById("diemtoan").value);
+                    const diemly = parseFloat(document.getElementById("diemly").value);
+                    const diemhoa = parseFloat(document.getElementById("diemhoa").value);
+
+                    // Kiểm tra MAHS
+                    if (mahs.length !== 8) {
+                        alert("Mã học sinh phải đủ 8 ký tự!");
+                        return false;
+                    }
+
+                    // Kiểm tra HOTEN
+                    if (hoten === "" || hoten.length > 50) {
+                        alert("Họ tên không được rỗng và tối đa 50 ký tự!");
+                        return false;
+                    }
+
+                    // Kiểm tra NGAYSINH
+                    if (ngaysinh === "" || new Date(ngaysinh) > new Date()) {
+                        alert("Ngày sinh không hợp lệ!");
+                        return false;
+                    }
+
+                    // Kiểm tra DIACHI
+                    if (diachi === "" || diachi.length > 150) {
+                        alert("Địa chỉ không được rỗng và tối đa 150 ký tự!");
+                        return false;
+                    }
+
+                    // Kiểm tra LOP
+                    if (lop.length !== 6) {
+                        alert("Lớp phải đủ 6 ký tự!");
+                        return false;
+                    }
+
+                    // Kiểm tra điểm số (Toán, Lý, Hóa)
+                    function checkDiem(value, mon) {
+                        return !(isNaN(value) || value < 0 || value > 10) || alert("Điểm " + mon + " phải từ 0 đến 10!");
+                    }
+                    if (!checkDiem(diemtoan, "Toán")) return false;
+                    if (!checkDiem(diemly, "Lý")) return false;
+                    if (!checkDiem(diemhoa, "Hóa")) return false;
+
+                    alert("Dữ liệu hợp lệ, form sẽ được gửi!");
+                    return true;
+                }
+            </script>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Nguyễn Văn Khải. Bản quyền thuộc về youngnvk.
+    </footer>
+</body>
+
+</html>
